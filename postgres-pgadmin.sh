@@ -10,6 +10,8 @@ service postgresql restart
 
 su -u postgres createuser --superuser $username
 
+adduser $username
+
 apt install curl -y
 
 apt install gnupg -y
