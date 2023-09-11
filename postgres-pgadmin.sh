@@ -10,9 +10,9 @@ service postgresql restart
 
 su -u postgres createuser --superuser $username
 
-apt install curl
+apt install curl -y
 
-apt install gnupg
+apt install gnupg -y
 
 curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | apt-key add
 
