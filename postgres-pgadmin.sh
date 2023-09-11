@@ -4,7 +4,7 @@ read -p "Email:" email
 
 apt update
 
-apt install postgresql postgresql-contrib y
+apt install postgresql postgresql-contrib -y
 
 service postgresql restart
 
