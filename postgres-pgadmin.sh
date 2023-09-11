@@ -37,3 +37,6 @@ iptables-save > /etc/iptables/rules.v4
 service iptables restart
 
 service postgresql restart
+
+ipv4=$(ip a | grep -oP 'inet \K[\d.]+' | tail -1)
+echo "Your PostgreSQL now can be accessed remotely on $ipv4:5432 and for pgAdmin4 http://$ipv4/pgadmin4/"
