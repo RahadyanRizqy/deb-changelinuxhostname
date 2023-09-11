@@ -22,7 +22,7 @@ sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_relea
 
 apt install pgadmin4-web -y
 
-echo -e "$email\npgadmin4\npgadmin4\ny\ny\n" | sudo /usr/pgadmin4/bin/setup-web.sh
+/usr/pgadmin4/bin/setup-web.sh
 
 echo "host    all             all             192.168.1.0/24          trust" >> /etc/postgresql/14/main/pg_hba.conf
 
