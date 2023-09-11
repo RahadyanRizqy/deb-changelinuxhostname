@@ -1,6 +1,5 @@
 echo "Create user for PostgreSQL"
 read -p "Username:" username
-read -p "Email:" email
 
 apt update
 
