@@ -1,2 +1,6 @@
-# ub-autoscripts
-make sure to do chmod +x ....sh on root
+# debian based autoscripts
+1. change hostname
+2. install postgresql + pgadmin4
+3. install mariadb + phpmyadmin
+4. 
+make sure to do chmod +x the script before running
