@@ -1,11 +1,13 @@
-echo "Create user for PostgreSQL"
-read -p "Username:" username
+#!/bin/bash
 
 apt update
 
 apt install postgresql postgresql-contrib -y
 
 service postgresql restart
+
+echo "Create user for PostgreSQL"
+read -p "Username:" username
 
 su -u postgres createuser --superuser $username
 
