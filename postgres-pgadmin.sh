@@ -18,6 +18,8 @@ apt install curl -y
 
 apt install gnupg -y
 
+apt install lsb-release -y
+
 curl https://www.pgadmin.org/static/packages_pgadmin_org.pub | apt-key add
 
 sh -c 'echo "deb https://ftp.postgresql.org/pub/pgadmin/pgadmin4/apt/$(lsb_release -cs) pgadmin4 main" > /etc/apt/sources.list.d/pgadmin4.list &&  apt update'
