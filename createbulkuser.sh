@@ -1,8 +1,8 @@
-COMMON_PASSWORD="pwebajaya"
-DBPASSWORD=$COMMON_PASSWORD
-
-read -p "Mysql Password: " ROOTPASSWORD
+read -p "Mysql (ROOT) Password: " ROOTPASSWORD
+read -p "Common Password: " COMMON_PASSWORD
 read -p "File List Input: " txtfile
+
+DBPASSWORD=$COMMON_PASSWORD
 
 # Read usernames from the list file and create users
 while IFS= read -r USERNAME; do
