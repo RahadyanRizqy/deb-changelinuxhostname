@@ -2,6 +2,10 @@ read -p "Mysql (ROOT) Password: " ROOTPASSWORD
 read -p "Common Password: " COMMON_PASSWORD
 read -p "File List Input: " TXTFILE
 
+apt install curl iptables-persistent nginx mariadb-client mariadb-server wget -y
+wget -O phpmyadmin.tar.gz https://files.phpmyadmin.net/phpMyAdmin/5.2.1/phpMyAdmin-5.2.1-english.tar.gz
+
+
 DBPASSWORD=$COMMON_PASSWORD
 
 # Read usernames from the list file and create users
