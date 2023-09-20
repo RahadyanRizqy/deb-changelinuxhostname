@@ -1,6 +1,6 @@
 read -p "Mysql (ROOT) Password: " ROOTPASSWORD
 read -p "Common Password: " COMMON_PASSWORD
-read -p "File List Input: " txtfile
+read -p "File List Input: " TXTFILE
 
 DBPASSWORD=$COMMON_PASSWORD
 
@@ -22,4 +22,4 @@ while IFS= read -r USERNAME; do
   mysql -u root -p$ROOTPASSWORD -e "FLUSH PRIVILEGES;"
 
   echo "User $USERNAME and its database created with password: $COMMON_PASSWORD";
-done < pwebauser.txt # list of user from txt in same directory
+done < $TXTFILE # list of user from txt in same directory
