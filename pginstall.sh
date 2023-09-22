@@ -37,8 +37,8 @@ install() {
 
     apt install iptables-persistent -y
 
-    iptables -A INPUT -p tcp --dport 3306 -j ACCEPT
-    iptables -A OUTPUT -p tcp --dport 3306 -j ACCEPT
+    iptables -A INPUT -p tcp --dport 5432 -j ACCEPT
+    iptables -A OUTPUT -p tcp --dport 5432 -j ACCEPT
     iptables-save > /etc/iptables/rules.v4
 
     service iptables restart
