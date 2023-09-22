@@ -5,7 +5,6 @@ read -p "File List Input: " TXTFILE
 apt install curl nginx mariadb-client mariadb-server iptables-persistent wget -y
 wget -O phpmyadmin.tar.gz https://files.phpmyadmin.net/phpMyAdmin/5.2.1/phpMyAdmin-5.2.1-english.tar.gz
 
-
 DBPASSWORD=$COMMON_PASSWORD
 
 # Read usernames from the list file and create users
